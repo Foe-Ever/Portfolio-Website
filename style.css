@@ -1,0 +1,186 @@
+/* Global styles */
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/*--------- Header Section ---------*/
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    text-align: left;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/*--------- Container to hold the boxes ---------*/
+.container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto; /* This centers the container */
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+/*---  Styling for the about section ---*/
+.about-section {
+    flex: 1 1 50%; /* The text section will take up 50% of the width by default */
+    margin-right: 20px;
+}
+.about-section h1{
+    font-size: 36px;
+}
+.about-section a {
+    display: block;
+    text-align: center;
+    margin: auto;
+    margin-top: 10px;
+    text-decoration: none;
+    /*background-color: #dddddd;*/
+    color: rgba(13, 13, 130, 0.657);
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 50%;
+}
+
+.about-section a:hover {
+    text-decoration: underline;
+}
+
+/*------------------------ Style for featured box ---------------------*/
+.featured-box {
+    flex: 1 1 35%; /* The featured box will take up 35% of the width by default */
+    padding: 20px;
+    background-color: #8d4949;
+
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    overflow: hidden; /* Ensures content inside the box doesn't overflow */
+}
+
+/* Image styling */
+.featured-box img {
+    width: 100%;  /* Make the image take full width of the box */
+    max-height: 250px;  /* Maintain the aspect ratio */
+    object-fit: cover;     /* Make the image cover the entire box area, cropping if needed */
+    border-radius: 8px;  /* Optional: Rounded corners for the image */
+}
+
+/* Header style */
+.featured-box h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #000000;
+    font-weight: bold;
+}
+
+/* Paragraph style */
+.featured-box p {
+    font-size: 16px;
+    color: #000000;
+}
+
+/*------------------------ Style for experience section ---------------------*/
+.experience-section {
+    flex: 1 1 100%; /* The text section will take up 50% of the width by default */
+    margin-right: 20px;
+}
+
+.experience-section h1{
+    font-size: 36px;
+}
+
+/*------------------------ Style for each project box ---------------------*/
+.content-box {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    flex: 1;
+    min-width: 250px;
+    text-align: center;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    overflow: hidden; /* Ensures content inside the box doesn't overflow */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Image styling */
+.content-box img {
+    width: 100%;  /* Make the image take full width of the box */
+    height: 250px;  /* Maintain the aspect ratio */
+    object-fit: cover;     /* Make the image cover the entire box area, cropping if needed */
+    border-radius: 8px;  /* Optional: Rounded corners for the image */
+    margin-bottom: 15px;  /* Space between the image and the header */
+}
+
+/* Content Box Header style */
+.content-box h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #000000;
+    font-weight: bold;
+}
+
+/* Paragraph style */
+.content-box p {
+    font-size: 16px;
+    color: #000000;
+}
+
+/* Hover effect for boxes */
+.content-box:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+
+
+/*--------------- Responsive behavior for small screens --------------*/
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .featured-box,
+    .about-box,
+    .content-box {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Extra small screens, i.e., mobile */
+@media (max-width: 480px) {
+    .featured-box,
+    .about-box,
+    .content-box {
+        width: 100%;
+    }
+}
