@@ -34,6 +34,31 @@ nav ul li a {
     text-decoration: none;
 }
 
+/*--------- Footer Section ---------*/
+footer {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    text-align: left;
+}
+
+footer nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+
+footer nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+footer nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+
 /*--------- Container to hold the boxes ---------*/
 .container {
     display: flex;

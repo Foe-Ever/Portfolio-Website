@@ -1,4 +1,4 @@
-Portfolio Website by Trenton Fletcher. Special thanks to ChatGpt for its assistance.
+Portfolio Website by Trenton Fletcher. Built with digital fabrication tools.
 
 Website Overview
     Home
